@@ -54,7 +54,7 @@ const categoryImages = {
     '/images/taps.png'
   ],
   wash_basins: [
-    '/images/cabinet.jpeg',
+    '/images/cabinet.png',
     '/images/cabinet1.jpeg',
     '/images/cabinet2.jpeg',
     '/images/cabinet3.jpeg',
