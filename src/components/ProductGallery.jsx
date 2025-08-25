@@ -53,7 +53,7 @@ const categoryImages = {
     '/images/soapdishes.png',
     '/images/taps.png'
   ],
-  cabinet_wash_basins: [
+  wash_basins: [
     '/images/cabinet.jpeg',
     '/images/cabinet1.jpeg',
     '/images/cabinet2.jpeg',
@@ -82,7 +82,7 @@ const categoryTitles = {
   floor_tiles: 'Premium Floor Tiles',
   wall_tiles: 'Designer Wall Tiles',
   bathroom_fittings: 'Bathroom Fittings & Accessories',
-  cabinet_wash_basins: 'Cabinet Wash Basins',
+  wash_basins: 'Wash Basins',
   closets: 'Water Closets & Toilets',
   kitchen_sinks: 'Kitchen Sinks & Fixtures'
 };
