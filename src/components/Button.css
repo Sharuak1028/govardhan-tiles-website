@@ -1,0 +1,64 @@
+/* Button Component Base Styles */
+.button-base {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+/* Default Button Variant */
+.button-default {
+  background-color: #f59e0b; /* bg-amber-500 */
+  color: #fff; /* text-white */
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.button-default:hover {
+  background-color: #d97706; /* hover:bg-amber-600 */
+}
+
+/* Outline Button Variant */
+.button-outline {
+  background-color: transparent; /* bg-transparent */
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Specific styles from ContactSection for the outline button */
+.border-amber-500 {
+  border-color: #f59e0b;
+}
+
+.text-amber-400 {
+  color: #fbbf24;
+}
+
+.hover\:bg-amber-500:hover {
+  background-color: #f59e0b;
+}
+
+.hover\:text-white:hover {
+  color: #fff;
+}
+
+/* Specific styles from ContactSection for the filled button */
+.bg-gradient-to-r.from-amber-500.to-orange-600 {
+  background-image: linear-gradient(to right, #f59e0b, #ea580c);
+}
+
+.hover\:from-amber-600:hover {
+  --tw-gradient-from: #d97706;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-orange-700:hover {
+  --tw-gradient-to: #c2410c;
+}

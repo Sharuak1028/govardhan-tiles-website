@@ -1,0 +1,44 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "floor_tiles",
+        "wall_tiles",
+        "bathroom_fittings",
+        "cabinet_wash_basins",
+        "closets",
+        "kitchen_sinks"
+      ],
+      "description": "Product category"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Product image URL"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Product price"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this product is featured"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "image_url"
+  ]
+}
