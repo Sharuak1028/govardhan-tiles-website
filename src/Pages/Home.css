@@ -19,6 +19,10 @@
 
 .container {
   width: 100%;
+  max-width: 100%; /* Fix for horizontal overflow */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Ensures padding/border is included in width */
 }
 
 .mx-auto {
@@ -33,6 +37,9 @@
 
 .grid {
   display: grid;
+  gap: 2rem;
+  /* Add a default for mobile, so the columns stack */
+  grid-template-columns: 1fr;
 }
 
 .gap-8 {
@@ -127,7 +134,7 @@
 /* For extra small screens (below 400px) */
 @media (max-width: 400px) {
   .text-2xl {
-    font-size: 1.25rem; /* Slightly smaller footer title */
+    font-size: 1.25rem;
   }
 
   .px-6 {
@@ -136,7 +143,6 @@
   }
 
   .gap-8 {
-    gap: 1.25rem; /* Reduce gap for compact view */
+    gap: 1.25rem;
   }
 }
-
