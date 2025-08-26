@@ -303,3 +303,118 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* ContactSection.css */
+
+/* Section padding */
+.contact-section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(to bottom right, #111827, #1f2937, #78350f);
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .contact-section h2 {
+    font-size: 3rem;
+  }
+}
+
+.contact-section p {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  max-width: 42rem;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* Grid container */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto 4rem auto;
+}
+@media (min-width: 640px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cards */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: background 0.3s ease;
+}
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f59e0b, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estimate Box */
+.estimate-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.estimate-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.estimate-box p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons wrapper */
+.estimate-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .estimate-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

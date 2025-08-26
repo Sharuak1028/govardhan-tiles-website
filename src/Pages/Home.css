@@ -123,3 +123,20 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* For extra small screens (below 400px) */
+@media (max-width: 400px) {
+  .text-2xl {
+    font-size: 1.25rem; /* Slightly smaller footer title */
+  }
+
+  .px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .gap-8 {
+    gap: 1.25rem; /* Reduce gap for compact view */
+  }
+}
+

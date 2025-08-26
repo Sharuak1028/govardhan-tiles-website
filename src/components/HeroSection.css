@@ -137,3 +137,74 @@
   .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .md\:justify-start { justify-content: flex-start; }
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+}
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+
+  .hero-content {
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  .hero img {
+    flex: 1;
+    max-width: 500px;
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+}
